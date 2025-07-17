@@ -22,6 +22,13 @@
 
 ## 🗂️ Project Structure
 
+Cyber-Safety-Defender/
+├── index.html # Main HTML file
+├── style.css # CSS styling
+├── script.js # Game logic
+├── image.png # Banner or logo image
+├── ware.ico # Tab favicon
+
 
 ---
 
