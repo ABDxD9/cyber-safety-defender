@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cyber Safety Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <canvas id="matrix-bg"></canvas>
+
+    <div class="logo-banner">
+  <img src="image/image.png" alt="Cyber Safety Defender Logo">
+
+</div>
+ <div class="logo-subtitle">
+  <p style="color:#0ff; font-weight:bold; margin-top:10px;">Secure your cyberspace, one click at a time!</p>
+</div>
+
+  <div class="container" id="welcome">
+    <h1>🔐 Cyber Safety Challenge</h1>
+    <button onclick="startGame()">Start Game</button>
+  </div>
+
+  <!-- Level 1 -->
+  <div class="container game-screen" id="level1" style="display: none;">
+    <h2>📧 Level 1: Spot the Phishing Email</h2>
+    <p id="question-text"></p>
+    <div id="options"></div>
+    <p id="feedback" class="feedback"></p>
+    <button id="next-btn" onclick="nextQuestion()" disabled>Next</button>
+    <div class="xp-bar-bg"><div class="xp-bar" id="xp-bar"></div></div>
+  </div>
+
+  <div class="container" id="level1-complete" style="display: none;">
+    <h2>Level 1 Complete ✅</h2>
+    <p>XP: <span id="final-xp"></span></p>
+    <button onclick="startLevel2()">Next Level</button>
+  </div>
+
+  <!-- Level 2 -->
+  <div class="container game-screen" id="level2" style="display: none;">
+    <h2>🔐 Level 2: Password Strength</h2>
+    <p id="password-question-text"></p>
+    <div id="password-options"></div>
+    <p id="password-feedback" class="feedback"></p>
+    <button id="password-next-btn" onclick="nextPasswordQuestion()" disabled>Next</button>
+  </div>
+
+  <!-- Level 3 -->
+  <div id="level3" class="game-screen" style="display: none;">
+    <h2>🕵️ Level 3: Spot the Fake Login</h2>
+    <p id="login-instruction">Click 3 suspicious elements on this login page.</p>
+
+    <div id="fake-login-container">
+      <!-- Dynamic login screen content will load here -->
+    </div>
+
+    <p id="level3-feedback" class="feedback"></p>
+  </div>
+
+  <!-- Game Complete -->
+  <div class="container" id="game-complete" style="display: none;">
+    <h2>🎉 You Completed All Levels!</h2>
+    <p>Total XP: <span id="total-xp"></span></p>
+    <p>You're now officially a Cyber Ninja 🥷</p>
+  </div>
+   <div class="typing-box">
+  <span id="typing-text"></span>
+</div>
+
+     <section class="credits">
+  <h3>Game Info</h3>
+  <ul>
+    <li>Levels: 3</li>
+    <li>Developer: ABD</li>
+    <li>Project Type: Cyber Safety Awareness Game</li>
+  </ul>
+   <div class="coming-soon">
+  <p>More levels and features coming soon...</p>
+</div>
+   <section class="filler">
+  <h2>Thanks for Playing!</h2>
+  <p>Made with ❤️ by ABD</p>
+   </section>
+    <div id="top-left-corner">Cyber v1.0</div>
+
+    <div id="theme-toggle" onclick="toggleTheme()">💡</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

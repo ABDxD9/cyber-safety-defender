@@ -1,0 +1,262 @@
+.logo-banner {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.logo-banner img {
+  max-width: 250px;
+  height: auto;
+  filter: drop-shadow(0 0 10px limegreen);
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0d1117;
+  color: #e6edf3;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  margin: auto;
+  padding: 20px;
+  max-width: 600px;
+  background: #161b22;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00000066;
+}
+
+button {
+  background-color: #238636;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  margin: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.feedback {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.xp-bar-bg {
+  width: 100%;
+  height: 15px;
+  background-color: #30363d;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.xp-bar {
+  height: 15px;
+  background-color: #00ffcc;
+  width: 0%;
+  border-radius: 10px;
+}
+
+/* Level 3 - Fake Login Styles */
+#fake-login {
+  margin: 20px auto;
+  padding: 30px;
+  background: #fff;
+  color: #111;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #ff4d4d66;
+  max-width: 400px;
+  position: relative;
+}
+
+#fake-login input, #fake-login button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 90%;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+}
+
+#fake-login .logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #d00;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#fake-login .fake-url {
+  font-size: 12px;
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.found {
+  outline: 2px solid limegreen;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.3s;
+}
+body {
+  background: linear-gradient(145deg, #0f0f0f, #111);
+  background-attachment: fixed;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+}
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: radial-gradient(rgba(0, 255, 204, 0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: -1;
+}
+.logo-banner img {
+  max-width: 300px;
+  height: auto;
+  animation: glowPulse 2s infinite;
+  filter: drop-shadow(0 0 15px lime);
+}
+
+@keyframes glowPulse {
+  0% { filter: drop-shadow(0 0 10px lime); }
+  50% { filter: drop-shadow(0 0 20px #0ff); }
+  100% { filter: drop-shadow(0 0 10px lime); }
+}
+.filler {
+  padding: 50px 20px;
+  text-align: center;
+  background: #1a1a1a;
+  color: white;
+  margin-top: 40px;
+  border-top: 2px solid #444;
+}
+
+.filler h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.filler p {
+  font-size: 18px;
+  opacity: 0.8;
+}
+.credits {
+  padding: 30px;
+  background-color: #0d0d0d;
+  color: #eee;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.credits h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #00ffff;
+}
+
+.credits ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.credits ul li {
+  margin: 10px 0;
+}
+.coming-soon {
+  background: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 40px;
+  font-size: 20px;
+  font-style: italic;
+}
+.typing-box {
+  font-size: 24px;
+  color: #00ffcc;
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Courier New', monospace;
+}
+#top-left-corner {
+  position: fixed;
+  top: 10px;
+  left: 15px;
+  color: #0ff;
+  font-size: 12px;
+  font-family: 'Courier New', monospace;
+  opacity: 0.8;
+}
+#theme-toggle {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #00ffff;
+  opacity: 0.8;
+  transition: 0.2s;
+}
+#theme-toggle:hover {
+  opacity: 1;
+  text-shadow: 0 0 5px #00ffff;
+}
+#matrix-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Keeps it in the background */
+  width: 100vw;
+  height: 100vh;
+  background: black;
+}
+.eye-wrapper {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  width: 80px;
+  height: 80px;
+  z-index: 1000;
+}
+
+.eye {
+  width: 100%;
+  height: 100%;
+  background: #111;
+  border: 4px solid #00ffcc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 12px #00ffcc88;
+  transition: transform 0.05s linear;
+}
+
+.pupil {
+  width: 25px;
+  height: 25px;
+  background: #00ffcc;
+  border-radius: 50%;
+  transition: all 0.05s ease;
+}
