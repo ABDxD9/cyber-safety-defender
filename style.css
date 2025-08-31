@@ -260,3 +260,53 @@ body::before {
   border-radius: 50%;
   transition: all 0.05s ease;
 }
+
+/* Shared base for all fake login boxes */
+div[id$='login'], .insta-login, #fake-login {
+  background: #111;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 350px;
+  margin: 20px auto;
+  font-family: sans-serif;
+  color: white;
+}
+
+/* Logos */
+.logo {
+  color: red;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+/* Inputs (anywhere inside a login box) */
+div[id$='login'] input, .insta-login input {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 8px;
+  background: #222;
+  color: white;
+}
+
+/* Buttons */
+div[id$='login'] button, .insta-login button {
+  background: green;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Fake URL text */
+.fake-url {
+  color: red;
+  margin-top: 15px;
+  font-size: 14px;
+}
