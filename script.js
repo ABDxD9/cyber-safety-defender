@@ -254,6 +254,25 @@ const loginPages = [
     ]
   },
   {
+    name: "Instagram",
+    html: `
+      <div class="insta-login">
+        <div class="logo">Instagran</div>
+        <input type="text" id="insta-username" placeholder="Phone, username, or email" />
+        <input type="password" id="insta-password" placeholder="Password" />
+        <button id="insta-btn">Log in</button>
+        <p class="fake-url">http://insta-login.netlify.app</p>
+      </div>
+    `,
+    elements: [
+      { id: "insta-username", correct: false },
+      { id: "insta-password", correct: false },
+      { id: "insta-btn", correct: false },
+      { class: "logo", correct: true },
+      { class: "fake-url", correct: true }
+    ]
+  },
+  {
     name: "Bank",
     html: `
       <div id="fake-login">
@@ -371,6 +390,7 @@ function drawMatrix() {
 }
 
 setInterval(drawMatrix, 33);
+
 
 
 
