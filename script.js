@@ -32,6 +32,21 @@ const questions = [
     correct: 1
   },
   {
+    question: "You see a file named 'invoice.pdf.exe' in an email. What should you do?",
+    options: ["Open it", "Delete it immediately", "Forward it to a friend"],
+    correct: 1
+  },
+  {
+    question: "A phishing email usually greets you with:",
+    options: ["Dear Customer", "Your real full name", "Your employee ID"],
+    correct: 0
+  },
+  {
+    question: "What’s the safest action if you doubt an email from your bank?",
+    options: ["Click the link", "Call the bank directly", "Reply to the email"],
+    correct: 1
+  },
+  {
     question: "Which Amazon email is not real?",
     options: ["care@amazon.in", "order-help@amazonsupport.live", "support@amazon.in"],
     correct: 1
@@ -351,5 +366,6 @@ function drawMatrix() {
 }
 
 setInterval(drawMatrix, 33);
+
 
 
