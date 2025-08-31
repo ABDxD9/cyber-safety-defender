@@ -248,14 +248,24 @@ const loginPages = [
       { id: "fb-login-btn", correct: false }
     ]
   },
-  <div id="fake-login">
-  <div class="logo">Instagran</div>
-  <input type="text" id="insta-username" placeholder="Phone, username, or email" />
-  <input type="password" id="insta-password" placeholder="Password" />
-  <button id="insta-btn">Log in</button>
-  <p class="fake-url">http://insta-login.netlify.app</p>
-</div>
-
+  {
+  name: "Instagram",
+  html: `
+    <div id="fake-login">
+      <div class="logo">Instagran</div>
+      <input type="text" id="insta-username" placeholder="Phone, username, or email" />
+      <input type="password" id="insta-pass" placeholder="Passcode" />
+      <button id="insta-btn">Log in</button>
+      <p class="fake-url">http://insta-login.netlify.app</p>
+    </div>
+  `,
+  elements: [
+    { class: "logo", correct: true },       // typo in brand name
+    { id: "insta-username", correct: true }, // suspicious / phishing style
+    { class: "fake-url", correct: true },    // fake link
+    { id: "insta-pass", correct: false },
+    { id: "insta-btn", correct: false }
+  ]
   },
   {
     name: "Bank",
@@ -375,6 +385,7 @@ function drawMatrix() {
 }
 
 setInterval(drawMatrix, 33);
+
 
 
 
