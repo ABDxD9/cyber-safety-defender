@@ -37,6 +37,11 @@ const questions = [
     correct: 1
   },
   {
+    question: "Which email is a phishing attempt?",
+    options: ["support@paypal.com", "security-alert@paypalsecure-login.com", "help@paypal.com"],
+    correct: 1
+  },
+  {
     question: "Pick the phishing bank email:",
     options: ["alerts@hdfcbank.com", "hdfc.support@safe-login.info", "services@hdfcbank.com"],
     correct: 1
@@ -341,3 +346,4 @@ function drawMatrix() {
 }
 
 setInterval(drawMatrix, 33);
+
