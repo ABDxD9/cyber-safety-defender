@@ -37,6 +37,11 @@ const questions = [
     correct: 1
   },
   {
+    question: "You see a file named 'invoice.pdf.exe' in an email. What should you do?",
+    options: ["Open it", "Delete it immediately", "Forward it to a friend", "Save it for later"],
+    correct: 4
+  },
+  {
     question: "Which email is a phishing attempt?",
     options: ["support@paypal.com", "security-alert@paypalsecure-login.com", "help@paypal.com"],
     correct: 1
@@ -346,4 +351,5 @@ function drawMatrix() {
 }
 
 setInterval(drawMatrix, 33);
+
 
