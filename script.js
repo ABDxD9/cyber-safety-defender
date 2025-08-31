@@ -141,7 +141,12 @@ const passwordQuestions = [
   { password: "XvB!92@cK1", options: ["Strong", "Weak", "Compromised"], correct: 0 },
   { password: "school2025", options: ["Strong", "Weak", "Compromised"], correct: 1 },
   { password: "Pa$$w0rd123", options: ["Strong", "Weak", "Compromised"], correct: 0 },
-  { password: "qwerty", options: ["Strong", "Weak", "Compromised"], correct: 2 }
+  { password: "qwerty", options: ["Strong", "Weak", "Compromised"], correct: 2 },
+  { password: "SummerHoliday2024", options: ["Strong", "Weak", "Compromised"], correct: 1 },
+  { password: "letmein", options: ["Strong", "Weak", "Compromised"], correct: 2 },
+  { password: "H&f9!rT#zQ", options: ["Strong", "Weak", "Compromised"], correct: 0 },
+  { password: "football123", options: ["Strong", "Weak", "Compromised"], correct: 1 },
+  { password: "admin", options: ["Strong", "Weak", "Compromised"], correct: 2 }
 ];
 
 function startLevel2() {
@@ -366,6 +371,7 @@ function drawMatrix() {
 }
 
 setInterval(drawMatrix, 33);
+
 
 
 
